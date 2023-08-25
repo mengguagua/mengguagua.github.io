@@ -46,14 +46,15 @@
   - 5、通知管理员，npm publish 上传到npm库
 
   >注意：编写的组件需要定义 name 属性，原因如下：
-  >```js
-  >// 遍历注册组件时候需要使用component.name 默认约定的规范是全小写，或者 小写-小写
-  >const install = function (Vue, opts = {}) {
-  >		components.map(component => {
-  >			Vue.component(component.name, component);
-  >		})
-  >};
-  >```
+
+  ```js
+  // 遍历注册组件时候需要使用component.name 默认约定的规范是全小写，或者 小写-小写
+  const install = function (Vue, opts = {}) {
+  		components.map(component => {
+  			Vue.component(component.name, component);
+  		})
+  };
+  ```
 
   ## 附加
   ### 脚手架使用
@@ -88,6 +89,8 @@
   | 高成成 | 2023-07-13 | 1.6.0 | 交互规范继承github评论功能
 | 高成成 | 2023-07-14 | 1.6.1 | 头部增加天气API显示，暂时展示温度和天气
 | 高成成 | 2023-08-17 | 1.6.2 | 组件说明相关菜单归并在`组件库组件`菜单; 工具方法菜单新增多个方法
+| 高成成 | 2023-08-18 | 1.6.3 | 隐藏无障碍工具；增加css样式示例-需要持续增加
+| 高成成 | 2023-08-25 | 1.6.4 | css样式示例-增加头像立体放大效果和放大镜效果(类似淘宝购物放大衣服)
 
   ps：版本是package.json的version
   ### 其他
